@@ -28,6 +28,9 @@ io.on('connection', (socket) => {
   });
 });
 
+app.get('/', (req, res)=> {
+  res.send('working..........');
+})
 
 app.post('/', (req, res) => {
     const body = req.body;
